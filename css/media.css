@@ -13,32 +13,367 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
+
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+	nav.nav {
+		display: none;
+	}
+	
+	.btn.header_btn {
+		display: none;
+	}
+	
+	header {
+		padding: 11px 16px;
+		background: #fff;
+	}
+
+	body.dark header {
+		background: #111;
+	}
+	
+	body.dark header.fixed {
+		background: transparent;
+	}
+	
+	.theme_wrapper {
+		margin-right: 34px;
+	}
+	
+	.burger {
+		display: flex;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		background: url(../img/burger_line.svg) no-repeat center;
+		background-color: #00BDB5;
+	}
+	
+	h1.title {
+		font-size: 24px;
+		margin: 47px 0 14px 0;
+		max-width: 300px;
+	}
+	
+	.support {
+		display: none;
+	}
+	
+	section {
+		padding: 0 17px;
+	}
+	
+	.top_video_bg {
+		padding-top: 64px;
+		height: 695px;
+	}
+	
+	p.post_title {
+		font-size: 16px;
+		max-width: 255px;
+		margin-bottom: 230px;
+	}
+	
+	main {
+		padding-top: 64px;
+	}
+	
+	.btn.top_btn {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.top_img {
+		position: absolute;
+		width: 100%;
+		height: 180px;
+		background-size: 100%;
+		left: 0;
+		top: 170px;
+	}
+	
+	.top_video_bg video {
+		width: auto;
+		height: 100%;
+	}
+	
+	section.partners {
+		padding: 58px 17px 46px 17px;
+	}
+	
+	.partner_item:nth-child(3), .partner_item:nth-child(4), .partner_item:nth-child(5), .partner_item:nth-child(6) {
+		display: none;
+	}
+	
+	.partners_wrapper {
+		height: 94px;
+		border-radius: 14px;
+		padding: 0 37px;
+	}
+
+	h2.section_title {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	
+	.section_content {
+		font-size: 16px;
+	}
+	
+	section {
+		margin-bottom: 46px;
+	}
+	
+	.video_btn {
+		width: 78px;
+		height: 78px;
+	}
+	
+	.video_btn img {
+		width: 16px;
+	}
+	
+	.video_wrapper {
+		border-radius: 12px;
+	}
+	
+	.poster_overlay {
+		backdrop-filter: blur(1px);
+	}
+	
+	.gradient {
+		margin: 0;
+		width: 100%;
+		border-radius: 14px;
+		height: 810px;
+	}
+	
+	.case_img {
+		position: inherit;
+		width: 100%;
+		max-height: 195px;
+		border-radius: 25px 25px 0 0;
+	}
+	
+	.case {
+		flex-direction: column-reverse;
+	}
+	
+	.case_img img {
+		width: 100%;
+	}
+	
+	.case_info {
+		position: relative;
+		top: -30px;
+		border-radius: 12px;
+		padding: 28px 30px;
+	}
+	
+	.case_counter {
+		margin-bottom: 10px;
+	}
+	
+	.case_title {
+		font-size: 18px;
+		margin-bottom: 18px;
+	}
+	
+	.case_text {
+		font-size: 14px;
+		margin-bottom: 18px;
+	}
+	
+	.result_item {
+		padding: 6px 0;
+		font-size: 14px;
+	}
+
+	.ecosystem h2.section_title {
+	    margin-bottom: 20px;
+	}
+	
+	section.cases {
+	    padding-bottom: 36px;
+	    padding-top: 0;
+	}
+	
+	header.fixed {
+	    top: 10px;
+	    background: none;
+	}
+	
+	header.fixed .section_wrapper {
+	    margin: 0 17px;
+	    padding: 11px 16px;
+	}
+
+	.cases_arrow {
+		display: flex;
+		z-index: 1;
+		position: relative;
+		top: -10px;
+	}
+
+	.arrow {
+	    border-radius: 62px;
+	    border: 1px solid rgba(255, 255, 255, 0.24);
+	    width: 62px;
+	    height: 62px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
+	.arrow.next {
+	    transform: rotate(180deg);
+	    margin-left: 11px;
+	}
+	
+	.arrow:hover {
+	    background: #00bdb5;
+	    border-color: #00bdb5;
+	}
+	
+	section.faq h2.section_title {
+	    max-width: 255px;
+	    text-align: center;
+	}
+	
+	.faq_header {
+	    font-size: 16px;
+	    max-width: 220px;
+	}
+	
+	.faq_item {
+	    padding: 20px 34px;
+	    margin-bottom: 14px;
+	}
+	
+	.faq_close {
+	    top: 20px;
+	    right: 18px;
+	}
+	
+	.footer_fos_video {
+	    height: 100%;
+	}
+	
+	section.footer_fos video {
+	    height: 100%;
+	    width: auto;
+	    bottom: 0;
+	}
+	
+	.fos_text {
+	    display: none;
+	}
+	
+	.fos_wrapper {
+	    padding: 25px 34px;
+	    max-width: 275px;
+	    border-radius: 14px;
+	}
+	
+	input.fos_input {
+	    border-radius: 4.8px;
+	    margin-bottom: 12px;
+	    font-size: 16px;
+	    padding: 6px 12px;
+	}
+	
+	h3.fos_title {
+	    font-size: 20px;
+	    margin-bottom: 20px;
+	}
+	
+	.politics {
+	    font-size: 12px;
+	    margin-bottom: 15px;
+	}
+	
+	input.fos_submit.btn {
+	    font-size: 16px;
+	    padding: 8px 22.5px;
+	    border-radius: 9px;
+	}
+	
+	.footer_fos .section_wrapper {
+	    padding: 59px 0;
+	}
+	
+	footer {
+	    padding: 33px 17px;
+	}
+	
+	.footer_top {
+	    flex-direction: column;
+	    padding: 0 0 28px 0;
+	}
+	
+	a.footer_logo {
+	    margin-bottom: 28px;
+	    width: 71px;
+	    height: 31px;
+	}
+	
+	.footer_logo svg {
+	    width: 71px;
+	}
+	
+	.footer_logo svg path {
+	    fill: #00BDB5;
+	}
+	
+	.support.mobile {
+	    display: flex;
+	    margin-top: 28px;
+	}
+	
+	.support.mobile span.hr_line {
+	    display: none;
+	}
+	
+	.support_item {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    margin-bottom: 32px;
+	}
+	
+	.support.mobile span.sup_text {
+	    font-size: 13px;
+	    max-width: 132px;
+	}
+	
+	.sup_img {
+	    display: flex;
+	    margin-bottom: 12px;
+	}
+	
+	.footer_bottom {
+	    flex-direction: column-reverse;
+	    align-items: flex-start;
+	    padding: 18px 0 0;
+	}
+	
+	.politic_links {
+	    margin: 28px 0 47px 0;
+	}
+	
+	.footer_bottom a:nth-child(1) {
+	    margin-bottom: 10px;
+	}
+	
+	.footer_bottom a {
+	    border-bottom: none;
+	    text-decoration: underline;
+	}
 
 }
 
@@ -47,30 +382,3 @@
 
 }
 
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}

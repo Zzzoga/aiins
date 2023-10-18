@@ -61,12 +61,37 @@ body *::selection {
 header .section_wrapper {
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    transition: all .5s ease;
 }
 
 header {
     display: flex;
     justify-content: center;
     padding: 45px 0 35px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+header.fixed .section_wrapper {
+    border-radius: 24px;
+    border: 1px solid #C5E1E1;
+    background: #FFF;
+    padding: 18px 26px;
+}
+
+a.logo {
+    display: flex;
+}
+
+header.fixed {
+    padding: 0;
+    top: 33px;
+    position: fixed;
+    z-index: 9;
 }
 
 .header_left, .header_right {
@@ -125,6 +150,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 127px;
 }
 
 .top_img {
@@ -132,10 +158,12 @@ main {
     width: 100%;
     height: 100%;
     background: url(../img/top_img.svg) no-repeat 76% top;
+    z-index: -1;
 }
 
 .top_screen .section_wrapper {
     align-items: flex-start;
+    position: relative;
 }
 
 h1.title {
@@ -271,7 +299,6 @@ span.color_text {
     text-align: center;
     max-width: 760px;
     background: linear-gradient(90deg, #00BDB5 0%, #682DE5 53.47%, #CA265D 95.13%);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 70px;
@@ -342,6 +369,7 @@ span.color_text {
 section.top_screen {
     margin-bottom: 0;
     position: relative;
+    flex-direction: column;
 }
 
 section.cases {
@@ -349,88 +377,24 @@ section.cases {
 }
 
 .gradient_bg {
-    background: linear-gradient(180deg, rgba(242,246,246,1) 0%, rgba(242,246,246,1) 32%, rgba(0,189,181,1) 32%, #111 100%);
     width: 100%;
+    max-width: 1920px;
     margin-bottom: 70px;
-}
-
-section.cases {
-    padding-bottom: 156px;
-    padding-top: 30px;
-}
-
-.case_info {
-    border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(50px);
-    padding: 40px 48px 44px 38px;
-    color: #EDEDED;
-    max-width: 567px;
-    z-index: 1;
-}
-
-.case_counter {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 13px;
-}
-
-.case_title {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 42px;
-}
-
-.case_text {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: 430px;
-    margin-bottom: 20px;
-}
-
-.result_item {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 10px 0 10px 10px;
-    border-bottom: 1px solid #39807C;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.result_item:first-child {
-    border-top: 1px solid #39807C;
-}
-
-.case {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    max-width: 1190px;
-    width: 100%;
-}
-
-.case_img {
-    position: absolute;
-    border-radius: 25px;
     overflow: hidden;
-    right: 0;
-    max-height: 570px;
 }
 
-.cases_slider {
-    max-width: 1190px;
-    width: 100%;
+.gradient {
+    position: absolute;
+    width: 97%;
+    margin: 0 34px;
+    height: 1070px;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,189,181,1) 0%, #111 100%);
+    border-radius: 42px;
 }
 
 section.cases {
@@ -630,6 +594,10 @@ input.fos_input {
     outline: 0;
     width: 100%;
     margin-bottom: 10px;
+}
+
+input.fos_input:focus {
+	border-color: #c5e1e1;
 }
 
 .footer_fos .section_wrapper {
@@ -840,7 +808,8 @@ body.dark .faq_body {
 }
 
 body.dark .partners_wrapper,
-body.dark .faq_item {
+body.dark .faq_item,
+body.dark header.fixed .section_wrapper {
 	border: 1px solid #264949;
 	background: #111;
 }
@@ -864,4 +833,21 @@ body.dark .btn:hover {
 
 body.dark span.hr_line {
 	background: rgba(232, 245, 244, 0.24);
+}
+
+.support.mobile,
+.burger {
+    display: none;
+}
+
+.support.mobile span.sup_text {
+    color: #fff;
+}
+
+.support.mobile span.hr_line {
+    background: rgba(240, 240, 240, 0.24);
+}
+
+.cases_arrow {
+    display: none;
 }

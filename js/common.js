@@ -82,6 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		darkThemeActive()
 	}
 
+	document.addEventListener('scroll', () => {
+		if ($(window).scrollTop() > 300) {
+		  $('header').addClass('fixed');
+		} else {
+		  $('header').removeClass('fixed');
+		}    
+	}) 
+
 	document.querySelectorAll('.faq_item').forEach(btn => {
 		btn.addEventListener('click', e => {
 			e.preventDefault()
