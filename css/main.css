@@ -369,7 +369,6 @@ span.color_text {
 section.top_screen {
     margin-bottom: 0;
     position: relative;
-    flex-direction: column;
 }
 
 section.cases {
