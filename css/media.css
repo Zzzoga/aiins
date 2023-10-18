@@ -212,6 +212,7 @@
 	header.fixed .section_wrapper {
 	    margin: 0 17px;
 	    padding: 11px 16px;
+	    border-radius: 14px;
 	}
 
 	.cases_arrow {
