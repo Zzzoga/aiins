@@ -289,8 +289,7 @@ tlMain.fromTo('section.about h2.section_title',
     }
     ).fromTo('section.description .section_wrapper', 
     {
-        y: 100,
-        opacity: 0
+        y: 100
     },
 	{ 
         scrollTrigger: {
@@ -305,8 +304,7 @@ tlMain.fromTo('section.about h2.section_title',
     }
     ).fromTo('section.description .section_wrapper', 
     {
-        y: 100,
-        opacity: 0
+        y: 100
     },
 	{ 
         scrollTrigger: {
