@@ -295,7 +295,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.top_screen',
-            markers: true,
+            markers: false,
             start: '60% center',
             end: 'bottom center',
             scrub: true
@@ -311,7 +311,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.top_screen',
-            markers: true,
+            markers: false,
             start: '60% center',
             end: 'bottom center',
             scrub: true
@@ -327,7 +327,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.description',
-            markers: true,
+            markers: false,
             start: '0% center',
             end: '100% center',
             scrub: true
@@ -343,7 +343,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.benefits',
-            markers: true,
+            markers: false,
             start: '50% center',
             end: '100% center',
             scrub: true
@@ -359,7 +359,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.solution',
-            markers: true,
+            markers: false,
             start: '0% bottom',
             end: '50% bottom',
             scrub: true
@@ -375,7 +375,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'main.page section.partners',
-            markers: true,
+            markers: false,
             start: '0% bottom',
             end: '50% bottom',
             scrub: true
@@ -391,7 +391,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'main.page section.partners',
-            markers: true,
+            markers: false,
             start: '0% center',
             end: '100% center',
             scrub: true
@@ -407,7 +407,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.steps',
-            markers: true,
+            markers: false,
             start: '0% bottom',
             end: '50% bottom',
             scrub: true
@@ -423,7 +423,7 @@ tlMain.fromTo('section.about h2.section_title',
 	{ 
         scrollTrigger: {
             trigger: 'section.description_blocks',
-            markers: true,
+            markers: false,
             start: '0% bottom',
             end: '50% bottom',
             scrub: true
