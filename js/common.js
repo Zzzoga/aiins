@@ -55,6 +55,18 @@ function darkThemeActive() {
 		partnerLogos[3].src = 'img/partner_4_dark.svg'
 		partnerLogos[4].src = 'img/partner_5_dark.svg'
 		partnerLogos[5].src = 'img/partner_6_dark.svg'
+		partnerLogos[6].src = 'img/partner_1_dark.svg'
+		partnerLogos[7].src = 'img/partner_2_dark.svg'
+		partnerLogos[8].src = 'img/partner_3_dark.svg'
+		partnerLogos[9].src = 'img/partner_4_dark.svg'
+		partnerLogos[10].src = 'img/partner_5_dark.svg'
+		partnerLogos[11].src = 'img/partner_6_dark.svg'
+		partnerLogos[12].src = 'img/partner_1_dark.svg'
+		partnerLogos[13].src = 'img/partner_2_dark.svg'
+		partnerLogos[14].src = 'img/partner_3_dark.svg'
+		partnerLogos[15].src = 'img/partner_4_dark.svg'
+		partnerLogos[16].src = 'img/partner_5_dark.svg'
+		partnerLogos[17].src = 'img/partner_6_dark.svg'
 	}
 
 	
