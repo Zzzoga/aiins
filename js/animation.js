@@ -151,8 +151,7 @@ const tlMain = gsap.timeline({})
 
 tlMain.fromTo('section.about h2.section_title', 
     {
-        y: 100,
-        opacity: 0
+        y: 100
     },
 	{ 
         scrollTrigger: {
@@ -162,13 +161,11 @@ tlMain.fromTo('section.about h2.section_title',
             end: 'bottom center',
             scrub: true
         }, 
-        y: 0,
-        opacity: 1
+        y: 0
     }
     ).fromTo('section.about .section_content', 
     {
-        y: 100,
-        opacity: 0
+        y: 100
     },
 	{ 
         scrollTrigger: {
@@ -178,8 +175,7 @@ tlMain.fromTo('section.about h2.section_title',
             end: 'bottom center',
             scrub: true
         }, 
-        y: 0,
-        opacity: 1
+        y: 0
     }
     ).fromTo('span.line_mask.first', 
     {
